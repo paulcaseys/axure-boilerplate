@@ -22,6 +22,8 @@ Added functionality
 `/Applications/Axure RP Pro 6.5.app/Contents/Resources/`
 3. copy and paste the new `resources` folder to the axure settings
 
+Now when you generate a prototype, it will generate custom javascript and css.
+
 ## Icons
 --------------
 Icon font-faces are included in the css, so icons will appear in the client's browser.
