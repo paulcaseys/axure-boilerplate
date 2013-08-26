@@ -1,0 +1,99 @@
+﻿body {
+    margin: 0px;
+    text-align: center;
+}
+
+div {
+    background-repeat: no-repeat;
+}
+
+.raw_image {
+    width: 100%;
+    height: 100%;
+}
+
+.preload {
+    display: none;
+}
+#main_container {
+    position: relative;
+    left: -100px;
+    width: 490px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.form_sketch {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.u0_normal {
+    background-image: url('../font_and_js_reference_files/u0_normal.png');
+}
+
+.u0_container {
+    position:absolute;
+    left:100px;
+    top:100px;
+    width:490px;
+    height:200px;
+}
+
+#u0_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:496px;
+    height:206px;
+}
+
+.u1 {
+    position:absolute;
+    left:20px;
+    top:20px;
+    width:450px;
+    height:120px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u2_normal {
+    background-image: url('../font_and_js_reference_files/jsPanel_u2_normal.png');
+}
+
+.u2_container {
+    position:absolute;
+    left:100px;
+    top:350px;
+    width:490px;
+    height:340px;
+}
+
+#u2_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:496px;
+    height:346px;
+}
+
+.u3 {
+    position:absolute;
+    left:10px;
+    top:10px;
+    width:470px;
+    height:45px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+

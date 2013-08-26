@@ -1,0 +1,43 @@
+
+
+.annotation-panel {
+	height: 100%;
+	overflow: auto;
+}
+
+.annotation-panel:hover {
+	opacity: 1.0;
+	/*width: 300px !important;*/
+}
+
+.annotation-labels {
+	overflow-y: auto !important;
+}
+
+.open-annotation-button, .close-annotation-button {
+
+	display: none;
+
+	position: fixed;
+	top: 5px;
+	right: 5px;
+	background-color: #888;
+	z-index: 10000000000;
+	padding:5px;
+
+	color: #fff;
+	font-family:AP Letter;
+	font-size:10px;
+	font-weight:normal;
+	font-style:normal;
+	text-decoration:none;
+
+	cursor: pointer;
+
+	border-radius: 4px;
+
+}
+
+.open-annotation-button:hover, .close-annotation-button:hover {
+	background-color: #00CCFF;
+}
