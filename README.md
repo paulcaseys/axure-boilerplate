@@ -11,10 +11,10 @@ Added functionality
 
 ## Overview
 --------------
-`resources.zip` includes files for Axure resources
-`plugins.zip` includes files for Axure plugins 
-`prototype/proto_custom.js` is a global javascript file, allowing you to quickly add more functionality
-`prototype/proto_custom.css` is a global stylesheet file, to add and override styles
+- `resources.zip` includes files for Axure resources
+- `plugins.zip` includes files for Axure plugins 
+- `prototype/proto_custom.js` is a global javascript file, allowing you to quickly add more functionality
+- `prototype/proto_custom.css` is a global stylesheet file, to add and override styles
 
 ## Installation
 
