@@ -18,7 +18,7 @@ Added functionality
 
 ## Installation
 
-1. unzip the `resources.zip` from this repo
+1. unzip the `resources.zip` and `plugins.zip` from this repo
 2. access your axure settings by right clicking application file and 'show package contents'
 `/Applications/Axure RP Pro 6.5.app/Contents/Resources/`
 3. copy and paste the new `resources` folder to the axure settings
