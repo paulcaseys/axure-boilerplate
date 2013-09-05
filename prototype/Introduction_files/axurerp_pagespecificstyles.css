@@ -226,3 +226,41 @@ div {
     word-wrap:break-word;
 }
 
+.u12_mouseOver {
+    background-image: url('../Introduction_files/expand-sitemap-button_u12_mouseOver.png');
+}
+
+.u12_normal {
+    background-image: url('../Introduction_files/expand-sitemap-button_u12_normal.png');
+}
+
+.u12_container {
+    position:absolute;
+    left:100px;
+    top:305px;
+    width:320px;
+    height:45px;
+}
+
+#u12_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:326px;
+    height:51px;
+}
+
+.u13 {
+    position:absolute;
+    left:20px;
+    top:13px;
+    width:298px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+

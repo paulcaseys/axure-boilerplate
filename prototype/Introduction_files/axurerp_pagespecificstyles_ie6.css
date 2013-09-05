@@ -1,0 +1,10 @@
+﻿* html .u12_mouseOver {
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="Introduction_files/expand-sitemap-button_u12_mouseOver.png");
+}
+
+* html .u12_normal {
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="Introduction_files/expand-sitemap-button_u12_normal.png");
+}
+

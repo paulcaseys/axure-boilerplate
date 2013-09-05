@@ -60,6 +60,13 @@ $(document).ready(function () {
 
 		}
 
+		// opens sitemap when .expand-sitemap-button button is clicked
+		$('.expand-sitemap-button').bind(eventType, nullObj, function(){me.openSitemapHandler();});
+		me.openSitemapHandler = function(e) {
+			$axure.messageCenter.postMessage('expandFrame');
+		};
+		
+
 
 	}
 
