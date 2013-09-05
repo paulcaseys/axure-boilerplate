@@ -78,18 +78,20 @@ a {
 #interfaceControlFrameHeader a 
 {
 	outline: none;
-    border: 1px solid #CCC;
-    border-bottom : none;
+    /*border: 1px solid #CCC;
+    border-bottom : none;*/
     padding: 3px 10px 4px 10px;
-    margin-left: 5px;
+    /*margin-left: 5px;*/
     text-decoration: none;
-    color: #333;
+    color: #888;
     white-space: nowrap;
     background-color: #EAEAEA;
+    /*
     border-top-left-radius:3px;
     border-top-right-radius:3px;
     -moz-border-top-left-radius:3px;
     -moz-border-top-right-radius:3px;
+    */
 }
 
 #interfaceControlFrameHeader a:link {
@@ -130,11 +132,11 @@ a {
 
 #interfaceControlFrameContainer 
 {
-    background-color: White;
-    border: 1px solid #CCC;
+    background-color: #bbb;
+    /*border: 1px solid #CCC;*/
     margin: 0px 4px 0px 4px;
-    padding: 2px 0px 2px 0px;
-    border-radius: 3px;
+    /*padding: 2px 0px 2px 0px;*/
+    /*border-radius: 3px;*/
     overflow: hidden;
     /*height:100%;*/
 }

@@ -14,37 +14,62 @@ $(document).ready(function () {
 		var me = this;
 
 
+
 		// ANNOTATIONS
-		if($(".annotation-panel").length !=- 0){
+		if($(".annotation-panel").length !=- 0 && dotArrayCounter != 0){
 
-			addAnnotationEleemnts();
+			var dotArrayCounter = 0;
+			var dotArray = $(".annotation-dot");
+			for (var i=0; i < dotArray.length; i++) {
+				if(parseInt($(dotArray[i]).css("top"), 10) > 50){
+					dotArrayCounter++;
+				}
+			}
 
-			$('.open-annotation-button').bind(eventType, nullObj, function(){me.openAnnotationHandler();});
-			me.openAnnotationHandler = function(e) {
-				showAnnotation();
-			};
+			if(dotArrayCounter !== 0){
+				// THERE ARE DOTS BELOW THE THRESHOLD
+				
+				addAnnotationEleemnts(dotArrayCounter);
 
-			$('.close-annotation-button').bind(eventType, nullObj, function(){me.closeAnnotationHandler();});
-			me.closeAnnotationHandler = function(e) {
-				hideAnnotation();
-			};
+				$('.open-annotation-button').bind(eventType, nullObj, function(){me.openAnnotationHandler();});
+				me.openAnnotationHandler = function(e) {
+					showAnnotation();
+				};
 
-			// positions annotations
-			resizeAnnotation();
+				$('.close-annotation-button').bind(eventType, nullObj, function(){me.closeAnnotationHandler();});
+				me.closeAnnotationHandler = function(e) {
+					hideAnnotation();
+				};
 
-			hideAnnotation();
-
-			// resize
-			$(window).resize(function() {
+				// positions annotations
 				resizeAnnotation();
-			});
+
+				hideAnnotation();
+
+				// resize
+				$(window).resize(function() {
+					resizeAnnotation();
+				});
+
+			} else {
+				// NO DOTS ARE BELOW THE THRESHOLD
+				
+				$(".annotation-panel").hide();
+				hideAnnotation();
+			}
+
 		}
+
 
 	}
 
 
-	function addAnnotationEleemnts(){
-		$( "body" ).append( "<div class='open-annotation-button'>view annotations</div>" );
+	function addAnnotationEleemnts(dotArrayCounter){
+		if(dotArrayCounter == 1){
+			$( "body" ).append( "<div class='open-annotation-button'>view <b>"+dotArrayCounter+" annotation</b></div>" );
+		} else {
+			$( "body" ).append( "<div class='open-annotation-button'>view <b>"+dotArrayCounter+" annotations</b></div>" );
+		}
 		$( "body" ).append( "<div class='close-annotation-button'>close</div>" );
 	}
 

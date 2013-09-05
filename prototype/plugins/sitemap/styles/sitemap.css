@@ -1,8 +1,8 @@
 ﻿
 #sitemapHost {
     font-size: .75em;
-    color:#333;
-    background-color:#FFF;
+    color:#888;
+    background-color:#fdfdfd;
     height: 100%;
 }
 
@@ -103,7 +103,7 @@
     padding-right : 4px;
     padding-bottom : 0px;
     padding-top : 1px;
-    border : 1px solid #AAA;
+    /*border : 1px solid #AAA;*/
 }
 
 .sitemapToolbar 
@@ -114,7 +114,7 @@
 .sitemapToolbarButton 
 {
 	font-size: 1em;
-	color: #069;
+	color: #a6a6a6;
 }
 
 .sitemapLinkContainer
