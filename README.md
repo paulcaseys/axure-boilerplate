@@ -35,5 +35,3 @@ http://fortawesome.github.io/Font-Awesome/cheatsheet/
 ##### Modern pictograms (normal)
 http://modernpictograms.com/
 
-##### AP Letter
-Custom AP font
