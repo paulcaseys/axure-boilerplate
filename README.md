@@ -6,18 +6,18 @@ These additional files will help you create cleaner wireframes that are well ann
 
 #### Addition functionality includes;
 - Cleaner sitemap design,
-- A collapsable annotations side-panel,
+- A collapsible annotations side-panel,
 - Correlating annotation dots that are hidden when the annotation panal is collapsed,
 - The option to add custom JavaScript to your projects,
 - The option to add custom CSS to your axure projects.
 
-##### Example of collapsable annotation side-panel
+##### Example of collapsible annotation side-panel
 ![example](http://paulcasey.net/clients/apn/apn_radio_apps/slices/axure-wireframe.gif)
 
 ## Files in this repository
 --------------
 - `/axure-settings/` includes files to install into Axure
-- `/example-project/` an example project with a collapsable annotations
+- `/example-project/` an example project with a collapsible annotations
 - `/icon-fonts/` handy icons for your wireframes (optional)
 
 
