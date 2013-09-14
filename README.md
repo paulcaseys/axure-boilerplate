@@ -51,7 +51,7 @@ You have now installed the default settings. Now when you generate a prototype, 
 
 ## Example project
 -------------
-An example project is included that contains
+An example project is included in the `/example-project/` directory. It contains;
 - Annotated side-panels
 - Optional extensibility using custom JavaScript and CSS files
 
