@@ -16,7 +16,7 @@ These additional files will help you create cleaner wireframes that are well ann
 --------------
 - `/axure-settings/` includes files to install into Axure
 - `/example-project/` an example project with a collapsable annotations
-- `/icon-fonts/` handy icons for your projects (optional)
+- `/icon-fonts/` handy icons for your wireframes (optional)
 
 
 ## What you need
@@ -51,10 +51,13 @@ or
 You have now installed the default settings. Now when you generate a prototype, it will generate custom javascript and css.
 
 
-## Example project files included
+## Example project
 -------------
-I have include an example project to illustrate the extensibility and display the annotations
+An example project is included that contains
+- Annotated side-panels
+- Optional extensibility using custom JavaScript and CSS files
 
+##### files included
 `wireframe_with_annotation_panel_ver01.rp` an example Axure Project
 `/prototype/` an example prototype
 `/prototype/proto_custom.js` customisable JavaScript file
