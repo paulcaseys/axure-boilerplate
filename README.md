@@ -1,6 +1,6 @@
 # Axure refined
 --------------
-[http://www.axure.com/](Axure) is a popular prototyping software available on OSX and PC.
+[Axure](http://www.axure.com/) is a popular prototyping software available on OSX and PC.
 
 These additional files will help you create cleaner wireframes that are well annotated and more flexible than previously possible.
 
