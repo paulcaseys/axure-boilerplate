@@ -27,11 +27,9 @@ You will also need to download this repository.
 
 ## How to download
 --------------
-You have two options.
+You have two options;
 
-Either
-1. [Download the zip](https://github.com/paulcaseys/axure-boilerplate/archive/master.zip)
-or
+1. [Download the zip](https://github.com/paulcaseys/axure-boilerplate/archive/master.zip), or
 2. Open terminal and type `git clone https://github.com/paulcaseys/axure-boilerplate.git`
 
 
