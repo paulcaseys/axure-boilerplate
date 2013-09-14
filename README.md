@@ -21,18 +21,18 @@ These additional files will help you create cleaner wireframes that are well ann
 
 ## What you need
 --------------
-An installed copy of [http://www.axure.com/download](Axure 6.5)
+You will require an installed copy of [Axure 6.5]([http://www.axure.com/download)
 
-To download this repository.
+You will also need to download this repository.
 
 ## How to download
 --------------
 You have two options.
 
 Either
-[https://github.com/paulcaseys/axure-boilerplate/archive/master.zip](Download the zip)
+1. [Download the zip](https://github.com/paulcaseys/axure-boilerplate/archive/master.zip)
 or
-Open terminal and type `git clone https://github.com/paulcaseys/axure-boilerplate.git`
+2. Open terminal and type `git clone https://github.com/paulcaseys/axure-boilerplate.git`
 
 
 ## Installation
