@@ -45,7 +45,8 @@ Open terminal and type `git clone https://github.com/paulcaseys/axure-boilerplat
 4. Right-click `Axure` and select 'Show Package Contents'
 5. Go to `/Applications/Axure RP Pro 6.5.app/Contents/Resources/DefaultSettings/Prototype_Files/`
 6. Paste the `plugins` and `resources` directories (agree to overwrite the existing files)
-7. Restart/Open Axure
+7. Install the fonts in `icon-fonts` (double-click each ttf and select Install Font)
+8. Restart/Open Axure
 
 You have now installed the default settings. Now when you generate a prototype, it will generate custom javascript and css.
 
@@ -88,6 +89,7 @@ Icon font-faces are included in the css, so icons will appear in the client's br
 
 ##### Font Awesome
 http://fortawesome.github.io/Font-Awesome/cheatsheet/
+(copy and paste any icon into your wireframe, and select FontAwesome as the font)
 
 ##### Modern pictograms (normal)
 http://modernpictograms.com/
