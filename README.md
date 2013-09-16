@@ -16,9 +16,9 @@ These additional files will help you create cleaner wireframes that are well ann
 
 ## Files in this repository
 --------------
-- `/axure-settings/` includes files to install into Axure
-- `/example-project/` an example project with a collapsible annotations
-- `/icon-fonts/` handy icons for your wireframes (optional)
+- `/axure-settings/` Files to add to you Axure app settings
+- `/example-project/` Example project with a collapsible annotations
+- `/icon-fonts/` Handy icons for your wireframes (optional)
 
 
 ## What you need
