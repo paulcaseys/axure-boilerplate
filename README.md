@@ -61,7 +61,7 @@ An example project is included in the `/example-project/` directory. It contains
 1. `wireframe_with_annotation_panel_ver01.rp` an example Axure Project
 2. `/prototype/` an example prototype
 3. `/prototype/proto_custom.js` customisable JavaScript file
-4. `/prototype/proto_custom.css` customisable JavaScript file
+4. `/prototype/proto_custom.css` customisable CSS file
 
 `proto_custom.js` and `proto_custom.css` are globally embedded across all of your wireframes. You can edit these and update functionality across all pages.
 
