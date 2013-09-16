@@ -25,7 +25,7 @@ These additional files will help you create cleaner wireframes that are well ann
 --------------
 You will require an installed copy of [Axure 6.5]([http://www.axure.com/download)
 
-Then you will just need to download and install this repository.
+Then you can download and install this repository.
 
 ## How to download
 --------------
