@@ -18,14 +18,24 @@
     font-style: normal;
 }
 @font-face {
-  font-family: 'FontAwesome';
-  src: url('fonts/fontawesome-webfont.eot?v=3.2.1');
-  src: url('fonts/fontawesome-webfont.eot?#iefix&v=3.2.1') format('embedded-opentype'), 
-  url('fonts/fontawesome-webfont.woff?v=3.2.1') format('woff'), 
-  url('fonts/fontawesome-webfont.ttf?v=3.2.1') format('truetype'), 
-  url('fonts/fontawesome-webfont.svg#fontawesomeregular?v=3.2.1') format('svg');
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'FontAwesome';
+	src: url('fonts/fontawesome-webfont.eot?v=3.2.1');
+	src: url('fonts/fontawesome-webfont.eot?#iefix&v=3.2.1') format('embedded-opentype'), 
+		url('fonts/fontawesome-webfont.woff?v=3.2.1') format('woff'), 
+		url('fonts/fontawesome-webfont.ttf?v=3.2.1') format('truetype'), 
+		url('fonts/fontawesome-webfont.svg#fontawesomeregular?v=3.2.1') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'apdm-icons';
+	src:url('fonts/apdm-icons.eot');
+	src:url('fonts/apdm-icons.eot?#iefix') format('embedded-opentype'),
+		url('fonts/apdm-icons.woff') format('woff'),
+		url('fonts/apdm-icons.ttf') format('truetype'),
+		url('fonts/apdm-icons.svg#apdm-icons') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 /** end Paul's font **/
 
