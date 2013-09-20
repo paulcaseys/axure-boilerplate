@@ -4,7 +4,7 @@
 
 These additional files will help you create cleaner wireframes that are well annotated and more flexible than previously possible.
 
-#### Addition functionality includes;
+#### Additional functionality includes;
 - Cleaner sitemap design,
 - A collapsible annotations side-panel,
 - Correlating annotation dots that are hidden when the annotation panal is collapsed,
