@@ -1,5 +1,6 @@
 
 
+/* */
 .annotation-panel {
 	height: 100%;
 	overflow: auto;
@@ -7,12 +8,13 @@
 
 .annotation-panel:hover {
 	opacity: 1.0;
-	/*width: 300px !important;*/
 }
 
 .annotation-labels {
 	overflow-y: auto !important;
+	width: 300px;
 }
+
 
 .open-annotation-button, .close-annotation-button {
 
