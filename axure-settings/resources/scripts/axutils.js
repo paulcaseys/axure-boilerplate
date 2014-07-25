@@ -166,3 +166,27 @@
 
 
  })();
+
+console.log('hi');
+ $(document).ready(function(){
+    console.log('hi2');
+    addCSS('proto_custom.css', 'head');
+    addJavascript('proto_custom.js', 'head');
+    $('[data-label]').each(function (ind, ele) {
+            var $ele = $(ele), cls = $ele.attr('data-label');
+            $ele.addClass(cls);
+        });
+    $('html').addClass(window.location.href.replace(/[\s\S]*\/([\s\S]*)\.[\s\S]*/, '$1'));
+    eval($('div[data-label="jsPanel"] *:not(:has("*"))').css('display', 'none').text());
+});
+function addJavascript(jsname,pos) {
+    var th = document.getElementsByTagName(pos)[0], s = document.createElement('script');
+    s.setAttribute('type','text/javascript');
+    s.setAttribute('src',jsname);
+    th.appendChild(s);
+}
+
+function addCSS(cssname, pos){
+    $(pos).append('<link rel="stylesheet" href="'+cssname+'" />');
+}
+

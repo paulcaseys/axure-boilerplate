@@ -1,5 +1,5 @@
 ﻿#pageNotesHost {
-    font-size: .75em;
+    font-size: 12px;
     color:#333;
     height: 100%;
 }
@@ -18,7 +18,7 @@
 
 #pageNameHeader
 {
-	font-size: 1.2em;
+	font-size: 13px;
 	font-weight: bold;
 	height: 23px;
 	white-space: nowrap;
@@ -31,7 +31,7 @@
 
 .pageNoteName 
 {
-	font-size: .9em;
+	font-size: 12px;
 	margin-bottom: 5px;
 	text-decoration: underline;
 	white-space: nowrap;

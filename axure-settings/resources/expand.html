@@ -7,24 +7,21 @@
         <script type="text/javascript" src="scripts/messagecenter.js"></script>
         <script type="text/javascript"><!--
             $(document).ready(function () {
-                $('#maximizeButton').click(function () {
-                    var query = $(this);
-                    query.css('background-color', '#DDD');
-//                    query.css('border-width', '0');
-//                    query.css('border-top-width', '2px');
+                $('#maximizePanel').click(function () {
+                    $(this).removeClass('maximizePanelOver');
                     $axure.messageCenter.postMessage('expandFrame');
                 });
-
+                $('#maximizePanel').mouseenter(function () {
+                    $(this).addClass('maximizePanelOver');
+                });
+                $('#maximizePanel').mouseout(function () {
+                    $(this).removeClass('maximizePanelOver');
+                });
             });
-
         --></script>
 	</head>
 	<body style="background-color:transparent;">
-	    <div id="maximizePanel">
-            <a title="Expand Controls" id="maximizeButton"
-            onmouseover="style.backgroundColor='#AAA';"
-            onmouseout="style.backgroundColor='#DDD';"
-            >&nbsp;</a>
+	    <div id="maximizePanel" class="maximizePanel">
         </div>
 	</body>
 </html>

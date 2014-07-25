@@ -1,164 +1,128 @@
 ﻿body {
-    font-family : Helvetica, Arial, Sans-Serif;
-    background-color: #F9F9F9;
-    overflow:hidden;
+  font-family : Helvetica, Arial, Sans-Serif;
+  background-color: #eee;
+  overflow:hidden;
 }
-
 a {
-    cursor: pointer;
+  cursor: pointer;
+}
+#maximizePanelContainer {
+  font-size: 4px;
+  position:absolute;
+  left: 0px;
+  top: 0px;
+  width: 15px;
+  height: 13px;
+  overflow: visible;
+  z-index: 1000;
+}
+.maximizePanel {
+  position:absolute;
+  left: 0px;
+  top: 0px;
+  width: 20px;
+  height: 20px;
+  margin: 2px 0px 0px 1px;
+  background: url('../images/261_expand_12rollover1.png') no-repeat;
+  cursor: pointer;
+}
+.maximizePanelOver {
+  background: url('../images/261_expand_12rollover2.png') no-repeat;    
 }
 
-#maximizePanelContainer 
+#interfaceControlFrameMinimizeContainer {
+  position:relative;
+  font-size: 2px; /*for IE*/
+  text-align: right;
+  z-index: 100;
+    height: 20px;
+}
+#interfaceControlFrameMinimizeContainer a 
 {
-	font-size: 4px;
-	position:absolute;
-	left: 0px;
-	top: 0px;
-	width: 15px;
-	height: 13px;
-	overflow: visible;
-	z-index: 1000;
+    display: inline-block;
+    width: 15px;
+    height: 20px;
+  font-size: 2px;
+  background: url('../images/260_collapse_12rollover1.png') no-repeat;
+  text-decoration: none;
+  margin: 5px 5px 0px 0px;
 }
-
-#maximizePanel 
-{
-	position:absolute;
-	left: 0px;
-	top: 0px;
-	width: 20px;
-	height: 20px;
-	margin: 2px 0px 0px 1px;
+#interfaceControlFrame {
+    margin: 0px;
 }
-
-#maximizePanel a 
-{
-	position:absolute;
-	left: 0px;
-	top: 0px;
-	font-size: 4px;
-	padding: 2px 5px 1px 5px;
-	border: 1px solid #777;
-	border-top-width: 2px;
-	/*border: none;*/
-	background-color: #DDD;
-	/*background-color: Transparent;*/
-	text-decoration: none;
-	border-radius: 2px;
-	opacity: .5;
-}
-
-#interfaceControlFrameMinimizeContainer 
-{
-    margin: 0px 4px 0px 4px;
-	position:relative;
-	font-size: 2px; /*for IE*/
-	text-align: right;
-	padding-top: 4px;
-	z-index: 100;
-}
-
-#interfaceControlFrameMinimizeContainer a {
-	font-size: 2px;
-	padding: 1px 6px 1px 6px;
-	border: 1px solid #777;
-	background-color: #AAA;
-	text-decoration: none;
-	border-radius: 2px;
-}
-
 #interfaceControlFrameMinimizeContainer a:hover {
-	border: 1 solid #777;
-	background-color: #CCC;	
+  background: url('../images/260_collapse_12rollover2.png') no-repeat;
 }
-
+#interfaceControlFrameCloseContainer {
+    display: inline;
+    width: 15px;
+    height: 20px;
+    font-size: 2px;
+    margin: 5px 2px 0px 0px;
+}
+#interfaceControlFrameCloseContainer a 
+{
+  background: url('../images/259_close_12rollover1.png') no-repeat;
+    margin: 0px;
+  text-decoration: none;
+}
+#interfaceControlFrameCloseContainer a:hover 
+{
+  background: url('../images/259_close_12rollover2.png') no-repeat;
+}
 #interfaceControlFrameHeader li {
     display: inline;
 }
-
-#interfaceControlFrameHeader a 
-{
-	outline: none;
-    /*border: 1px solid #CCC;
-    border-bottom : none;*/
-    padding: 3px 10px 4px 10px;
-    /*margin-left: 5px;*/
-    text-decoration: none;
-    color: #888;
-    white-space: nowrap;
-    background-color: #EAEAEA;
-    /*
-    border-top-left-radius:3px;
-    border-top-right-radius:3px;
-    -moz-border-top-left-radius:3px;
-    -moz-border-top-right-radius:3px;
-    */
+#interfaceControlFrameHeader a {
+  outline: none;
+  padding: 3px 10px 3px 10px;
+  margin-right: 1px;
+  text-decoration: none;
+  color: #575757;
+  white-space: nowrap;
+  background-color: #D3D3D3;
 }
-
-#interfaceControlFrameHeader a:link {
-}
-
+#interfaceControlFrameHeader a:link {}
 #interfaceControlFrameHeader a:hover {
-    background-color: #DDD;
+  color: #000000;
 }
-
 #interfaceControlFrameHeader a.selected {
-    padding: 4px 10px 4px 10px;
-    border-bottom: 2px solid White;
-    background-color: White;
-    font-weight:bold;
+  background-color: White;
+  font-weight:bold;
+  padding: 3px 10px 4px 10px;
 }
-
-#interfaceControlFrameHeaderContainer
-{
-    margin: 0px 4px 0px 4px;
-    overflow: visible;
-	width: 250px;
+#interfaceControlFrameHeaderContainer {
+  overflow: visible;
+  width: 250px;
 }
-
 #interfaceControlFrameHeader {
-	position:relative;
-    list-style: none;
-    padding : 4px 0px 4px 5px;
-    font-size: .7em;
-    z-index: 50;
-    text-shadow: 0 1px 2px #FFF;
+  position:relative;
+  list-style: none;
+  padding : 4px 0px 4px 0px;
+  font-size: 11px;
+  z-index: 50;
+}
+#interfaceControlFrameContainer {
+  position: absolute;
+  background-color: White;
+  overflow: hidden;
+  width: 100%;
+  /*height:100%;*/
 }
 
-
-#interfaceControlFrame {
-    /*height:100%;*/
-    /*background-color:Aqua;*/   
+#interfaceControlFrameLogoContainer {
+  background-color: White;
+  border-bottom: 1px solid #EFEFEF;
+  margin: -5px 0px 5px 0px;
+  padding: 10px 5px 5px 5px;
+  overflow: hidden;
 }
-
-#interfaceControlFrameContainer 
-{
-    background-color: #bbb;
-    /*border: 1px solid #CCC;*/
-    margin: 0px 4px 0px 4px;
-    /*padding: 2px 0px 2px 0px;*/
-    /*border-radius: 3px;*/
-    overflow: hidden;
-    /*height:100%;*/
+#interfaceControlFrameLogoImageContainer {
+  text-align: center;
 }
-
-#interfaceControlFrameLogoContainer
-{
-	background-color: White;
-    border-bottom: 1px solid #EFEFEF;
-    margin: -5px 0px 5px 0px;
-    padding: 10px 5px 5px 5px;
-    overflow: hidden;
-}
-
-#interfaceControlFrameLogoImageContainer
-{
-	text-align: center;
-}
-
-#interfaceControlFrameLogoCaptionContainer
-{
-	text-align: center;
-    margin: 5px 10px 0px 10px;
-	font-size: .7em;
-	color: #333;
+#interfaceControlFrameLogoCaptionContainer {
+  text-align: center;
+  margin: 5px 10px 0px 10px;
+  font-size: 11px;
+  color: #333;
 }

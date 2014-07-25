@@ -1,9 +1,9 @@
 ﻿// use this to isolate the scope
 (function () {
 
-    if (!window.configuration.showPageNotes) { return; }
+    if (!$axure.document.configuration.showPageNotes) { return; }
 
-    $(document).ready(function () {
+    $(window.document).ready(function () {
         $axure.player.createPluginHost({
             id: 'pageNotesHost',
             context: 'interface',
@@ -23,7 +23,7 @@
             if (notes) {
                 var pageName = $axure.page.pageName;
                 $('#pageNameHeader').html(pageName);
-                var showNames = window.configuration.showPageNoteNames;
+                var showNames = $axure.document.configuration.showPageNoteNames;
 
                 for (var noteName in notes) {
                     if (showNames) {
