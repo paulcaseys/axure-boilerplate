@@ -23,7 +23,7 @@ These additional files will help you create cleaner wireframes that are well ann
 
 ## What you need
 --------------
-You will require an installed copy of [Axure 6.5]([http://www.axure.com/download)
+You will require an installed copy of [Axure 7.0]([http://www.axure.com/download)
 
 Then you can download and install this repository.
 
@@ -43,7 +43,7 @@ You have two options;
 2. Copy the  the `plugins` and `resources` directories
 3. Access your Axure settings by opening your `Applications` directory
 4. Right-click `Axure` and select 'Show Package Contents'
-5. Go to `/Applications/Axure RP Pro 6.5.app/Contents/Resources/DefaultSettings/Prototype_Files/`
+5. Go to `/Applications/Axure RP Pro 7.0.app/Contents/Resources/DefaultSettings/Prototype_Files/`
 6. Paste the `plugins` and `resources` directories (agree to overwrite the existing files)
 7. Install the fonts by going to `/resources/css/fonts/` and double-clicking on each ttf file and clicking 'Install Font'.
 8. Restart/Open Axure
