@@ -12,7 +12,7 @@ These additional files will help you create cleaner wireframes that are well ann
 - The option to add custom CSS to your axure projects.
 
 ##### Example of collapsible annotation side-panel
-![example](http://paulcasey.net/clients/apn/apn_radio_apps/slices/axure-wireframe.gif)
+![example](http://paulcasey.net/blog/wp-content/uploads/2014/07/axure-wireframe.gif)
 
 ## Files in this repository
 --------------
