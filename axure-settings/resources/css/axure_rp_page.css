@@ -1,5 +1,4 @@
-﻿
-/** start Paul's font **/
+﻿/** start Paul's font **/
 @font-face {
   font-family: 'AP Letter';
   src: url('fonts/APLetter-Regular.eot');
@@ -39,10 +38,13 @@
 }
 /** end Paul's font **/
 
-
 /* so the window resize fires within a frame in IE7 */
 html, body {
     height: 100%;    
+}
+
+a {
+	color: inherit;
 }
 
 p {

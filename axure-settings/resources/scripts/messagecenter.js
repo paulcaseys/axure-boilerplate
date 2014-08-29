@@ -6,18 +6,32 @@
 var CHROME_5_LOCAL = false;
 var CHROME = false;
 var WEBKIT = false;
+var OS_MAC = false;
+var IOS = false;
+
+var IE = false;
+var BROWSER_VERSION = 5000;
 (function () {
     var chromeRegex = /Chrome\/([0-9]+).([0-9]+)/g ;
-    var chromeMatch = chromeRegex.exec(navigator.userAgent);
+    var chromeMatch = chromeRegex.exec(window.navigator.userAgent);
     CHROME = Boolean(chromeMatch);
     CHROME_5_LOCAL = chromeMatch &&
                 Number(chromeMatch[1]) >= 5 &&
                 location.href.indexOf('file://') >= 0;
 
     var webkitRegex = /WebKit\//g ;
-    WEBKIT = Boolean(webkitRegex.exec(navigator.userAgent));
-})();
+    WEBKIT = Boolean(webkitRegex.exec(window.navigator.userAgent));
+    
+    var macRegex = /Mac/g ;
+    OS_MAC = Boolean(macRegex.exec(window.navigator.platform));
 
+    IOS = navigator.userAgent.match( /iPhone/i ) || navigator.userAgent.match( /iPad/i ) || navigator.userAgent.match( /iPod/i );
+
+    if($.browser) {
+        IE = $.browser.msie;
+        BROWSER_VERSION = $.browser.version;
+    }
+})();
 
 (function() {
     var _topMessageCenter;
@@ -41,18 +55,20 @@ var WEBKIT = false;
     (function() {
         if (!CHROME_5_LOCAL) {
             var topAxureWindow = window;
-            while (topAxureWindow.parent && topAxureWindow.parent !== topAxureWindow
-                && topAxureWindow.parent.$axure) topAxureWindow = topAxureWindow.parent;
+            try {
+                while(topAxureWindow.parent && topAxureWindow.parent !== topAxureWindow
+                    && topAxureWindow.parent.$axure) topAxureWindow = topAxureWindow.parent;
+            } catch(e) {}
             _topMessageCenter = topAxureWindow.$axure.messageCenter;
         }
     })();
 
-    $(document).ready(function() {
+    $(window.document).ready(function() {
         if (CHROME_5_LOCAL) {
             $('body').append("<div id='axureEventReceiverDiv' style='display:none'></div>" +
                 "<div id='axureEventSenderDiv' style='display:none'></div>");
 
-		    _eventObject = document.createEvent('Event');
+		    _eventObject = window.document.createEvent('Event');
 		    _eventObject.initEvent('axureMessageSenderEvent', true, true);            
             
             $('#axureEventReceiverDiv').bind('axureMessageReceiverEvent', function () {
@@ -133,49 +149,49 @@ var WEBKIT = false;
         });
     };
 
-    _messageCenter.postMessage = function (message, data) {
-        if (!CHROME_5_LOCAL) {
+    _messageCenter.postMessage = function(message, data) {
+        if(!CHROME_5_LOCAL) {
             _topMessageCenter.dispatchMessageRecursively(message, data);
         } else {
             var request = {
-                message : message,
-                data : data
+                message: message,
+                data: data
             };
-   
-            if (_initialized) {
-                var senderDiv = document.getElementById('axureEventSenderDiv');
+
+            if(_initialized) {
+                var senderDiv = window.document.getElementById('axureEventSenderDiv');
                 var messageText = JSON.stringify(request);
-                console.log('sending event: ' + messageText);
+                //                console.log('sending event: ' + messageText);
                 senderDiv.innerText = messageText;
                 senderDiv.dispatchEvent(_eventObject);
-                console.log('event sent');
+                //                console.log('event sent');
             } else {
                 _queuedMessages[_queuedMessages.length] = request;
             }
         }
-    }
+    };
 
     _messageCenter.setState = function(key, value) {
         var data = {
-            key : key,
-            value : value
+            key: key,
+            value: value
         };
         _messageCenter.postMessage('setState', data);
-    }
+    };
 
     _messageCenter.getState = function(key) {
         return _state[key];
-    }
+    };
 
     _messageCenter.addMessageListener = function(listener) {
         _listeners[_listeners.length] = listener;
-    }
+    };
 
     _messageCenter.addStateListener = function(key, listener) {
         _stateListeners[_stateListeners.length] = {
             key: key,
             listener: listener
         };
-    }
+    };
 
 })();
